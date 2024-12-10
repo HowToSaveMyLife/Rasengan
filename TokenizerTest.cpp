@@ -1,4 +1,4 @@
-#define TokenizerTest
+//#define TokenizerTest
 #ifdef TokenizerTest
 #include <cstdio>
 #include "Tokenizer.h"

@@ -71,5 +71,9 @@ BaseUnitNode::~BaseUnitNode()
 
 void BaseUnitNode::add_nextNode(BaseUnitNode& node)
 {
-    std::lower_bound(this->next.begin(),this->next.end(),node)
+    //std::lower_bound(this->next.begin(), this->next.end(), node);
+}
+
+void BaseUnitNode::link_preNode(BaseUnitNode& node)
+{
 }

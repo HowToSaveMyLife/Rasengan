@@ -39,6 +39,8 @@ struct CmpByKeyLength {
 	bool operator() (const std::string& key_1, const std::string& key_2) const {
 		if (key_1.length() > key_2.length())
 			return true;
+		else if (key_1.length() < key_2.length())
+			return false;
 		else
 			return key_1 > key_2;
 	}

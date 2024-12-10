@@ -1,0 +1,21 @@
+Var i = 0;
+import "importTest.txt";
+
+while(i<=10){
+	Var i = i+1;
+	Var x = x*99999;
+	
+}
+cal x;
+
+EOF
+
+while(i<=10){
+	Var i = i+1;
+	Var x = x*9999999999999;
+	
+}
+loop(2+4){Var x=x*2;};
+cal fantastic(3*4,2,11);
+Func f_1(x,y){ cal x+y; return 8 };
+cal f_1(1,5);

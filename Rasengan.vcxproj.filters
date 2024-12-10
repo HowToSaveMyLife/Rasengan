@@ -24,6 +24,30 @@
     <ClInclude Include="Units.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Operator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HP_int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HP_fraction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HP_complex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Analyze.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OperatorsDefine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildinFuncDefine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Tokenizer.cpp">
@@ -35,12 +59,60 @@
     <ClCompile Include="Units.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Operator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Analyze.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HP_int.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HP_fraction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HP_complex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VarManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AnalyzeTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VarsTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncsTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Tokenizer_test_InputKey.txt">
       <Filter>资源文件</Filter>
     </Text>
     <Text Include="Tokenizer_test_InputStr.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="AnalyzeTest_InputStr.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="VarsTest_InputStr.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="FuncsTest_InputStr.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="importTest.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="init.txt">
       <Filter>资源文件</Filter>
     </Text>
   </ItemGroup>

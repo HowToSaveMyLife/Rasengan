@@ -19,18 +19,42 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="FuncsTest.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="VarsTest.cpp" />
+    <ClInclude Include="Analyze.h" />
+    <ClCompile Include="AnalyzeTest.cpp" />
+    <ClInclude Include="BuildinFuncDefine.h" />
+    <ClInclude Include="FuncManager.h" />
+    <ClInclude Include="HP_complex.h" />
+    <ClInclude Include="HP_fraction.h" />
+    <ClInclude Include="HP_int.h" />
+    <ClInclude Include="Operator.h" />
+    <ClInclude Include="OperatorsDefine.h" />
     <ClInclude Include="Tokenizer.h" />
     <ClInclude Include="Units.h" />
     <ClInclude Include="VarManager.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Analyze.cpp" />
+    <ClCompile Include="FuncManager.cpp" />
+    <ClCompile Include="HP_complex.cpp" />
+    <ClCompile Include="HP_fraction.cpp" />
+    <ClCompile Include="HP_int.cpp" />
+    <ClCompile Include="Operator.cpp" />
     <ClCompile Include="Tokenizer.cpp" />
     <ClCompile Include="TokenizerTest.cpp" />
     <ClCompile Include="Units.cpp" />
+    <ClCompile Include="VarManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="AnalyzeTest_InputStr.txt" />
+    <Text Include="FuncsTest_InputStr.txt" />
+    <Text Include="importTest.txt" />
+    <Text Include="init.txt" />
     <Text Include="Tokenizer_test_InputKey.txt" />
     <Text Include="Tokenizer_test_InputStr.txt" />
+    <Text Include="VarsTest_InputStr.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

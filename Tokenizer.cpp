@@ -120,6 +120,23 @@ TokenizerRet Tokenizer::run(std::string& str)
 			return ret;
 		}
 
+		//	ÌØÊâ×Ö·û
+		if (str[pl] == ',') {
+			ret = TokenizerRet("sign", ",", 0);
+			str.erase(pl, 1);
+			return ret;
+		}
+		else if (str[pl] == ';') {
+			ret = TokenizerRet("sign", ";", 0);
+			str.erase(pl, 1);
+			return ret;
+		}
+		else if (str[pl] == '=') {
+			ret = TokenizerRet("sign", "=", 0);
+			str.erase(pl, 1);
+			return ret;
+		}
+
 		// ¿é
 		//Ð¡À¨ºÅ
 		if (str[pl] == '(') {
@@ -196,6 +213,20 @@ TokenizerRet Tokenizer::run(std::string& str)
 			}
 			else {
 				ret = TokenizerRet("block@Braces", str.substr(pl, pr - pl + 1), 0);
+				str.erase(pl, pr - pl + 1);
+				return ret;
+			}
+		}
+		//	Ë«ÒýºÅ
+		if (str[pl] == '"') {
+			for (pr = pl + 1; str[pr]!='"' && pr <= str.length(); pr++) {}
+			//pr--;
+			if (pr>=str.length()&& str[pr] != '"') {
+				ret = TokenizerRet("#ERROR#", "Quotes are not match!", 0);
+				return ret;
+			}
+			else {
+				ret = TokenizerRet("block@Quotes", str.substr(pl, pr - pl + 1), 0);
 				str.erase(pl, pr - pl + 1);
 				return ret;
 			}
